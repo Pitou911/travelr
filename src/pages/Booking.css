@@ -1,0 +1,64 @@
+.name {
+  display: flex;
+}
+
+.name-fill {
+  width: 50%;
+}
+
+#submitBtn {
+  background-color: #f7ecde;
+  color: #2c3333;
+  border-color: #2c3333;
+  font-weight: bold;
+  float: right;
+}
+
+#submitBtn:hover {
+  background-color: #fbf8f1;
+}
+#submitBtn:active {
+  background-color: #f7ecde;
+  border-color: #f7ecde;
+  color: orange;
+}
+
+.banner-img {
+  width: 100%;
+  filter: blur(3px);
+}
+
+/* .banner-img:hover {
+  filter: blur(4px);
+} */
+.banner-wrapper{
+  position: relative;
+}
+.banner-text {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  /* width: 80%; */
+}
+
+.trip-date {
+  display: flex;
+}
+
+.dateStartEnd {
+  width: 50%;
+}
+
+@media (max-width: 768px){
+
+  .banner-text{
+
+    font-size: 1.6rem;
+  }
+}

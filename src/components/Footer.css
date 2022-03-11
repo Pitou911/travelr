@@ -1,0 +1,17 @@
+footer {
+    background-color: #f7ecde;
+}
+
+.contact-us img {
+    width: 30px;
+    margin: 10px;
+}
+
+.contact-us img:hover {
+    transform: rotate(5deg);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+}
