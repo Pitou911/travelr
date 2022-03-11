@@ -89,7 +89,7 @@ import pub4 from "../images/pub4.jpg";
 import pub5 from "../images/pub5.jpg";
 import pub6 from "../images/pub6.jpg";
 // import "../script/placeScript.js";
-import { useEffect , useState} from 'react';
+import { useEffect, useState } from "react";
 import facebook from "../footerImg/facebook.png";
 import gmail from "../footerImg/gmail.png";
 import youtube from "../footerImg/youtube.png";
@@ -97,34 +97,39 @@ import youtube from "../footerImg/youtube.png";
 import Sidebar from "../components/Sidebar";
 function Place() {
   useEffect(() => {
-    document.title = "Places to visit"
- }, [])
+    document.title = "Places to visit";
+  }, []);
 
- const logo = document.querySelector(".logoFixed");
- const side = document.querySelector("#sit");
- const [isActive, setIsActive] = useState(false);
- 
- window.addEventListener("scroll", () => {
-   if (window.pageYOffset > 100) {
-     setIsActive(true);
-   } else {
-     setIsActive(false);
-   }
- })
- 
- 
+  const [isActive, setIsActive] = useState(false);
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
+    }
+  });
 
   return (
     <div>
       <Navbar />
-      
+
       {/* <a href="#" className="logoFixed">Travelr</a> */}
-      {isActive && <a href="#" className="logoFixed active">Travelr</a>}
-      {!isActive && <a href="#" className="logoFixed">Travelr</a>}
+      {isActive && (
+        <a href="/" className="logoFixed active">
+          Travelr
+        </a>
+      )}
+      {!isActive && (
+        <a href="/" className="logoFixed">
+          Travelr
+        </a>
+      )}
       <div className="container-fluid">
         <Sidebar />
         <div className="container" id="contain">
-          <h1 id="angkor">10 highly recommended places in Siem Reap</h1><br/>
+          <h1 id="angkor">10 highly recommended places in Siem Reap</h1>
+          <br />
           <div className="row mx-auto my-auto justify-content-center border border-success rounded-3">
             <div className="container my-3">
               <h2 className="font-weight-light mt-2" id="angkor">
@@ -194,7 +199,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                <br/>
+                <br />
                 <p>
                   Angkor Wat is a temple complex in northwest Cambodia. A
                   national symbol and sacred site of Cambodian Buddhism, the
@@ -297,7 +302,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                <br/>
+                <br />
                 <p>
                   The Bayon is a richly decorated Khmer Buddhist temple at
                   Angkor in Cambodia. Built in the late 12th or early 13th
@@ -400,7 +405,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                  <br/>
+                <br />
                 <p>
                   Phnom Bakheng is a Hindu and Buddhist temple in the form of a
                   temple mountain in Siem Reap Province, Cambodia. Dedicated to
@@ -492,7 +497,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                <br/>
+                <br />
                 <p>
                   Bakong is the first Khmer temple mountain of sandstone
                   constructed by rulers of the Khmer Empire at Angkor near
@@ -590,7 +595,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                <br/>
+                <br />
                 <p>
                   Ta Prohm is the modern name of the temple in Siem Reap,
                   Cambodia, built in the Bayon style largely in the late 12th
@@ -687,7 +692,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                <br/>
+                <br />
                 <p>
                   Banteay Srei or Banteay Srey is a 10th-century Cambodian
                   temple dedicated to the Hindu god Shiva. Located in the area
@@ -782,7 +787,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                <br/>
+                <br />
                 <p>
                   Preah Khan is a temple at Angkor, Cambodia, built in the 12th
                   century for King Jayavarman VII to honor his father. It is
@@ -877,7 +882,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                <br/>
+                <br />
                 <p>
                   A playground for locals, Phnom Kulen (literally Mountain of
                   the Lychees) is a gorgeous day out. The main attraction is the
@@ -904,7 +909,9 @@ function Place() {
           <br id="museum" />
           <div className="row mx-auto my-auto justify-content-center border border-success rounded-3">
             <div className="container my-3">
-              <h2 className="font-weight-light mt-2">9. Angkor National Museum</h2>
+              <h2 className="font-weight-light mt-2">
+                9. Angkor National Museum
+              </h2>
               <div
                 id="recipeCarousel8"
                 className="carousel slide w-100"
@@ -969,7 +976,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                <br/>
+                <br />
                 <p>
                   Angkor National Museum is an archaeological museum dedicated
                   to the collection, preservation and presentation of Angkorian
@@ -1057,7 +1064,7 @@ function Place() {
                 </a>
               </div>
               <div>
-                <br/>
+                <br />
                 <p>Pubs, dining & a party atmosphere</p>
                 <a
                   href="https://www.google.com/search?q=Pubs+street&sxsrf=APq-WBu9ApeTB8hLWCQMJej9nPjGEumscQ%3A1646321940586&ei=FOEgYsSwI8CEr7wPzf656AQ&ved=0ahUKEwjEitGTo6r2AhVAwosBHU1_Dk0Q4dUDCA4&oq=Pubs+street&gs_lcp=Cgdnd3Mtd2l6EAwyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyBwgAELADEEMyCggAEOQCELADGAAyCggAEOQCELADGAAyCggAEOQCELADGAAyEgguEMcBEK8BEMgDELADEEMYATISCC4QxwEQrwEQyAMQsAMQQxgBMhIILhDHARCvARDIAxCwAxBDGAEyEgguEMcBEK8BEMgDELADEEMYAUoECEEYAEoECEYYAVDXB1jXB2CuDmgDcAB4AIABAIgBAJIBAJgBAKABAqABAcgBE8ABAdoBBggAEAEYCdoBBggBEAEYCA&sclient=gws-wiz"
@@ -1075,18 +1082,25 @@ function Place() {
           <div className="row">
             <div className="col">
               <h3>Travelr</h3>
-              <div>The best digital platform that provide booking service for authentic and unpresidented trip in Cambodia.</div>
+              <div>
+                The best digital platform that provide booking service for
+                authentic and unpresidented trip in Cambodia.
+              </div>
             </div>
-            <div className="col">
-              
-            </div>
+            <div className="col"></div>
             <div className="col contact-us">
               <h3>Contact Us</h3>
               <p>
-                <a href="#"><img src={facebook}/></a> 
-                <a href="#"><img src={youtube}/></a>
-                
-                <a href="#"><img src={gmail}/></a>
+                <a href="facebook.com">
+                  <img src={facebook} alt="" />
+                </a>
+                <a href="youtube.com">
+                  <img src={youtube} alt="" />
+                </a>
+
+                <a href="gmail.com">
+                  <img src={gmail} alt="" />
+                </a>
               </p>
             </div>
           </div>
